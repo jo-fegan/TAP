@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAP - Temporary Administrative Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .logo-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(255,255,255,0.2);
+            border: 3px dashed rgba(255,255,255,0.5);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 14px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-top: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #34495e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Main Content */
+        .about {
+            background-color: white;
+            padding: 60px 0;
+        }
+
+        .about-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-text h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .about-text .description {
+            font-size: 1.3em;
+            color: #555;
+            line-height: 1.8;
+            font-style: italic;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+
+        /* Clients Section */
+        .clients {
+            background-color: #ecf0f1;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .clients h2 {
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .client-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .client-logo {
+            width: 120px;
+            height: 60px;
+            background-color: white;
+            border: 2px solid #bdc3c7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: white;
+            padding: 60px 0;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-card blockquote {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card cite {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .stars {
+            color: #f1c40f;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .client-logos {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-placeholder">
+                [Your Logo Here]
+            </div>
+            <h1>TAP</h1>
+            <p>Temporary Administrative Professional</p>
+        </div>
+    </header>
+
+    <!-- Contact Info -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>[your.email@example.com]</span>
+                </div>
+                <div class="contact-item">
+                    <span>📞</span>
+                    <span>[+1 (555) 123-4567]</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <div class="description">
+                    "A highly accomplished senior administrative professional keen to assist you with your ad hoc needs. I really hit the ground running with almost 30 years of experience across a wide range of industries and roles."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos -->
+    <section class="clients">
+        <div class="container">
+            <h2>Trusted by Businesses Like Yours</h2>
+            <div class="client-logos">
+                <div class="client-logo">Company A</div>
+                <div class="client-logo">Organization B</div>
+                <div class="client-logo">Business C</div>
+                <div class="client-logo">Firm D</div>
+                <div class="client-logo">Enterprise E</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What My Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Exceptional support during our busiest period. Seamlessly integrated into our team from day one."</blockquote>
+                    <cite>- Sarah M., Operations Director</cite>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"30 years of experience truly shows. Handles complex tasks with ease and professionalism."</blockquote>
+                    <cite>- James R., Executive Manager</cite>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"A lifesaver for our ad-hoc needs. Highly recommend for any temporary admin requirements."</blockquote>
+                    <cite>- Michelle L., HR Lead</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 TAP - Temporary Administrative Professional. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
